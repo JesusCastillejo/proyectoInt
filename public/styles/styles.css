@@ -1,0 +1,519 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(250, 243, 221);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(255, 119, 0);
+  color: white;
+}
+
+.logo-container {
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.logo-container h1 {
+  font-family: "Chewy", cursive;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.search-container input[type=text] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(155, 41, 21);
+  color: lightsalmon;
+}
+
+.search-container button {
+  width: 80px;
+  height: 80px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-container .img-back {
+  background-image: url(../../public/images/footprint_icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 70px;
+  height: 70px;
+}
+
+.search-container .img-back:active {
+  transform: scale(0.9);
+}
+
+.header .nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  font-weight: lighter;
+}
+.header .nav ul h3 {
+  font-family: "Chewy", cursive;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
+  font-family: "Chewy", cursive;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1020px) {
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+.toy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.toy h1 {
+  font-family: "Chewy", cursive;
+  font-size: 36px;
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.accesory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.accesory article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  transition: all 0.3s ease-out;
+  background-color: rgb(255, 119, 0);
+}
+
+.accesory article:hover {
+  transform: scale(1.03);
+}
+
+.accesory article img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.accesory article section {
+  padding: 1rem;
+  color: white;
+}
+
+.accesory article h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.accesory article h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+.accesory article .precios {
+  margin-top: 20px;
+  color: rgb(155, 41, 21);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.accesory article .precio-linea {
+  color: black;
+  text-decoration-line: line-through;
+  font-size: 12px;
+}
+
+.accesory article .boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.accesory article .boton img {
+  height: 15px;
+  width: 15px;
+}
+
+.accesory article button {
+  background-color: rgb(0, 159, 183);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.accesory article button:hover,
+.accesory article button:focus {
+  background-color: rgb(46, 64, 87);
+}
+
+.formAlta {
+  margin: 30px;
+}
+.formAlta form {
+  background-color: rgb(255, 119, 0);
+  border-radius: 20px;
+  color: white;
+}
+.formAlta form option {
+  color: black;
+}
+
+.formAlta form {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formAlta form div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.formAlta form label {
+  width: 30%;
+  min-width: 120px;
+  padding-right: 20px;
+}
+
+.formAlta form input[type=text],
+.formAlta form textarea,
+.formAlta form select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(204, 204, 204);
+}
+
+.formAlta form input[type=radio] {
+  margin-right: 5px;
+}
+
+.formAlta input[type=radio] {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formAlta input[type=radio] + label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 2px solid rgb(204, 204, 204);
+  vertical-align: middle;
+}
+
+.formAlta input[type=radio]:checked + label:before {
+  background-color: rgb(204, 204, 204);
+}
+
+.formAlta input[type=file] + label {
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: rgb(204, 204, 204);
+  color: white;
+  border-radius: 5px;
+}
+
+.formAlta input[type=file] + label {
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: rgb(204, 204, 204);
+  color: white;
+  border-radius: 5px;
+}
+
+.formAlta input[type=submit] {
+  display: inline-block;
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: rgb(0, 159, 183);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.formAlta input[type=submit]:hover {
+  background-color: rgb(46, 64, 87);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  form label,
+  form input[type=text],
+  form textarea,
+  form select {
+    width: 100%;
+    display: block;
+  }
+}
+.contact {
+  display: flex;
+  justify-content: center;
+}
+.contact .formContact {
+  height: 400px;
+  width: 350px;
+  margin: 30px;
+  background-color: rgb(255, 119, 0);
+  color: white;
+  padding: 20px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 15px;
+}
+
+main .formContact div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+main .formContact label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+main .formContact input[type=text],
+main .formContact textarea {
+  padding: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 3px;
+}
+
+main .formContact input[type=submit] {
+  background-color: rgb(0, 159, 183);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+main .formContact input[type=submit]:hover {
+  background-color: rgb(46, 64, 87);
+}
+
+.mainus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainus .us {
+  height: 500px;
+  width: 600px;
+}
+
+.artus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 119, 0);
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  gap: 15px;
+}
+.artus h1 {
+  font-family: "Chewy", cursive;
+  font-size: 36px;
+}
+.artus img {
+  border-radius: 20px;
+}
+
+.Footer {
+  grid-row: 3/4;
+  grid-column: 1/13;
+  background-color: rgb(255, 119, 0);
+}
+
+.Footer {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  grid-template-columns: auto auto auto auto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 100px 100px 30px;
+}
+
+.Footer .contact {
+  grid-row: 2/3;
+  grid-column: auto;
+  display: flex;
+  margin: 40px 0px;
+}
+
+.Footer .logo {
+  width: 250px;
+}
+
+.Footer .column1 {
+  min-width: 40%;
+  width: 40%;
+}
+
+.Footer .tools {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tools img {
+  margin-top: 4px;
+  margin-right: 20px;
+}
+
+.Footer li {
+  margin-bottom: 20px;
+  margin-right: 60px;
+  opacity: 0.9;
+}
+
+.column2, .column3, .column4 {
+  width: 20%;
+  margin-left: 30px;
+}
+
+.Footer .social {
+  display: flex;
+  padding: 0;
+}
+
+.Footer a {
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+.Footer a:hover {
+  color: rgb(250, 243, 221);
+  cursor: pointer;
+}
+
+.Footer .social li {
+  padding: 0px 7px;
+}
+
+.Footer .copy {
+  text-align: right;
+}
+
+.Footer .column2 li:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.Footer .column3 li:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.Footer p {
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

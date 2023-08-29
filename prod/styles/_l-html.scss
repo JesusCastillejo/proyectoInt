@@ -1,0 +1,10 @@
+@use './h-colors' as c ;
+@use './h-fonts' as f ;
+
+*{
+    font-family: f.$font-family1;
+}
+
+body{
+    background-color: c.$c-eggshell;
+}

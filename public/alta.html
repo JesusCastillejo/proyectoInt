@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
+
+    <meta name="author" content="Jesus Castillejo">
+    <meta name="copyright" content="Ref. to author | 2023 all right reserved">
+    <meta name="description" content="Integrador"> 
+    <meta name="keywords" content="BC, BootCampo, HTML, CSS, JS">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/normalizer.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Amy's Shop</title>
+
+    <link rel="icon" href="./icons/android-chrome-192x192.png">
+    <link rel="icon" href="./icons/android-chrome-512x512.png">
+    <link rel="icon" href="./icons/apple-touch-icon.png">
+    <link rel="icon" href="./icons/favicon-16x16.png">
+    <link rel="icon" href="./icons/favicon-32x32.png">
+    <link rel="icon" href="./icons/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="./images/dog-face-svgrepo-com.svg" alt="Logo" height="80px">
+            <h1>Amy's Shop</h1>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Buscar productos">
+            <div class="img-back">
+                <button></button>
+            </div>
+
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="./index.html"><h3>Home</h3></a></li>
+                <li><a href="#"><h3>Alta</h3></a></li>
+                <li><a href="./contacto.html"><h3>Contacto</h3></a></li>
+                <li><a href="./nosotros.html"><h3>Nosotros</h3></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <section id="toys" class="toy">
+            <h1>Alta</h1>
+        </section>
+    </div>
+
+    <main>
+        <article class="formAlta">
+            <form>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="stock">Stock:</label>
+                    <select id="stock" name="stock">
+                      <option value="">--Seleccione una opción--</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option6>
+                    </select>
+                </div>
+                <div>
+                    <label for="marca">Marca:</label>
+                    <select id="marca" name="marca">
+                      <option value="">--Seleccione una Marca--</option>
+                      <option value="poggy">Poggy</option>
+                      <option value="homesweet">Homesweet</option>
+                      <option value="cango">Cango</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria">
+                      <option value="">--Seleccione una Categoría--</option>
+                      <option value="juguete">Juguete</option>
+                      <option value="ropa">Ropa</option>
+                      <option value="huesos">Huesos</option>
+                      <option value="comederos">Comederos</option>
+                      <option value="collares">Collares</option>
+                      <option value="cuerdas">Cuerdas</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="descripcion">Descripción:</label>
+                    <input type="text" id="descripcion" name="descripcion">
+                </div>
+                <div>
+                    <label for="descripcion-larga">Descripción larga:</label>
+                    <textarea id="descripcion-larga" name="descripcion-larga" rows="4" cols="50"></textarea>
+                </div>
+                <div>
+                    <label for="precio">Precio:</label>
+                    <input type="text" id="precio" name="precio">
+                    <br>
+                    <label>Envío:</label>
+                    <input type="radio" id="envio" name="envio" value="envio">
+                    <label for="envio">Envío</label>
+                    <input type="radio" id="envio-rapido" name="envio" value="envio-rapido">
+                    <label for="envio-rapido">Envío rápido</label>
+                    <input type="radio" id="envio-sin-cargo" name="envio" value="envio-sin-cargo">
+                    <label for="envio-sin-cargo">Envío sin cargo</label>
+                    <br>
+                </div>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <select id="edad" name="edad">
+                      <option value="">--Seleccione la edad--</option>
+                      <option value="1 años">1 años</option>
+                      <option value="2 años">2 años</option>
+                      <option value="3 años">3 años</option>
+                      <option value="4 años">4 años</option>
+                      <option value="5 años">5 años</option>
+                      <option value="6 años">6 años</option>
+                      <option value="7 años">7 años</option>
+                      <option value="8 años">8 años</option>
+                      <option value="9 años">9 años</option>
+                      <option value="10 años">10 años</option>
+                      <option value="11 años">11 años</option>
+                      <option value="12 años">12 años</option>
+                      <option value="13 años">13 años</option>
+                      <option value="14 años">14 años</option>
+                      <option value="15 años">15 años</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="foto">Foto:</label>
+                    <input type="file" id="foto" name="foto" accept=".img,.png,.svg,.jpg">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </article>
+    </main>
+
+    <footer class="Footer">
+        <img src="./images/dog-face-svgrepo-com.svg" alt="Logo" height="60px">
+        <section class="contact">
+            <article class="column1">
+                <ul>
+                    <li>
+                        <div class="tools">
+                            <img src="./images/icon-location.svg" alt="Location">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="tools">
+                            <img src="./images/icon-phone.svg" alt="Phone">
+                            <p>+54-11-1234-5678</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="tools">
+                            <img src="./images/icon-email.svg" alt="Email">
+                            <p>Shop@Amy.com</p>
+                        </div>
+                    </li>
+                </ul>
+            </article><h1></h1>
+
+            <article class="column2">
+                <ul>
+                    <li>Nosotros</li>
+                    <li>Marcas</li>
+                    <li>FAQ</li>
+                </ul>
+            </article>
+
+            <article class="column3">
+                <ul>
+                    <li>Nuesta vision</li>
+                    <li>Blog</li>
+                    <li>Contactanos</li>
+                </ul>
+            </article>
+
+            <article class="column4">
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <article class="copy">
+            <p>© Copyright 2023 Amy's Shop. All rights reserved.</p>
+        </article>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

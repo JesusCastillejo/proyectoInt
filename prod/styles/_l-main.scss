@@ -1,0 +1,318 @@
+@use './h-colors' as c ;
+@use './h-fonts' as f ;
+
+//------------------ Main principal
+
+.toy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1{
+        font-family: f.$font-family;
+        font-size: 36px;
+    }
+}
+
+.main{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.accesory{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.accesory article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border: 1px solid c.$c-grey;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+    transition: all 0.3s ease-out;
+    background-color: c.$c-safety-orange;
+}
+
+.accesory article:hover {
+    transform: scale(1.03);
+}
+
+.accesory article img {
+    width: 100%;
+    object-fit:cover;
+}
+
+.accesory article section {
+    padding: 1rem;
+    color: c.$c-white;
+}
+
+.accesory article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.accesory article h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-size: 12px;
+}
+
+.accesory article .precios {
+    margin-top: 20px;
+    color: c.$c-rufous;
+    font-weight: bold;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.accesory article .precio-linea {
+    color: c.$c-black;
+    text-decoration-line: line-through;
+    font-size: 12px;
+}
+
+.accesory article .boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    img{
+        height: 15px;
+        width: 15px;
+    }
+}
+
+.accesory article button {
+    background-color: c.$c-moonstone;
+    color: c.$c-white;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 2rem;
+    cursor:pointer;
+}
+
+.accesory article button:hover,
+.accesory article button:focus {
+    background-color:c.$c-charcoal
+}
+
+//---------------- main alta
+
+.formAlta{
+    margin: 30px;
+    form{
+        background-color: c.$c-safety-orange;
+        border-radius: 20px;
+        color: c.$c-white;
+        option{
+            color: c.$c-black;
+        }
+    }
+}
+
+
+.formAlta form {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formAlta form div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.formAlta form label {
+    width: 30%;
+    min-width: 120px;
+    padding-right: 20px;
+}
+
+.formAlta form input[type="text"],
+.formAlta form textarea,
+.formAlta form select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid c.$c-grey;
+}
+
+.formAlta form input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+.formAlta input[type="radio"] {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAlta input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 2px solid c.$c-grey;
+    vertical-align: middle;
+}
+
+.formAlta input[type="radio"]:checked + label:before {
+    background-color: c.$c-grey;
+}
+
+
+.formAlta input[type="file"] + label {
+    display: inline-block;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: c.$c-grey;
+    color: c.$c-white;
+    border-radius: 5px;
+}
+
+.formAlta input[type="file"] + label {
+    display: inline-block;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: c.$c-grey;
+    color: c.$c-white;
+    border-radius: 5px;
+}
+
+.formAlta input[type="submit"] {
+    display: inline-block;
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: c.$c-moonstone;
+    color: c.$c-white;
+    border: none;
+    border-radius: 5px;
+}
+
+.formAlta input[type="submit"]:hover {
+    background-color: c.$c-charcoal;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    form label,
+    form input[type="text"],
+    form textarea,
+    form select {
+        width: 100%;
+        display:block
+    }
+}
+
+
+//-------------- main contactenos
+
+.contact{
+    display: flex;
+    justify-content: center;
+    .formContact{
+        height: 400px;
+        width: 350px;
+        margin: 30px;
+        background-color: c.$c-safety-orange;
+        color: c.$c-white;
+        padding: 20px;
+        border: 1px solid c.$c-grey;
+        border-radius: 15px;
+    }
+}
+
+  
+main .formContact div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+  
+main .formContact label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+main .formContact input[type="text"],
+main .formContact textarea {
+    padding: 10px;
+    border: 1px solid c.$c-grey;
+    border-radius: 3px;
+}
+  
+main .formContact input[type="submit"] {
+    background-color: c.$c-moonstone;
+    color: c.$c-white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+  
+main .formContact input[type="submit"]:hover {
+    background-color: c.$c-charcoal;
+}
+
+
+//------------------------------------ main nosotros
+
+
+
+.mainus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .us{
+       height: 500px;
+       width: 600px;
+    }
+}
+
+.artus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: c.$c-safety-orange;
+    color: c.$c-white;
+    padding: 30px;
+    border-radius: 20px;
+    gap: 15px;
+    h1{
+        font-family: f.$font-family;
+        font-size: 36px;
+        p{
+        
+        }
+    }
+
+}
+
+.artus img{
+    border-radius: 20px;
+}
